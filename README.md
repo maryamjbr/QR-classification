@@ -74,18 +74,11 @@ $$
 
 `givens(a, b)` is constructed so that
 
-$$
-G^T
-\begin{bmatrix}
-a \\
-b
-\end{bmatrix}
-=
-\begin{bmatrix}
-d \\
-0
-\end{bmatrix}.
-$$
+The function `givens(a, b)` is constructed so that:
+
+**Gᵀ [a, b]ᵀ = [d, 0]ᵀ**
+
+In other words, applying `G.T` eliminates the second component.
 
 Accordingly, the affected rows and columns are updated using
 
